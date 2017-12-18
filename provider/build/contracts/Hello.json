@@ -1,0 +1,478 @@
+{
+  "contractName": "Hello",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "provider",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isVersionContract",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isVersionLogic",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "contractName",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isVersionContractOrLogic",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "sayHello",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "cns",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getContractName",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getCns",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_cns",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6060604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550341561004f57600080fd5b6040516020806108ef83398101604052808051906020019091905050807f48656c6c6f000000000000000000000000000000000000000000000000000000818181600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600281600019169055505050505050610800806100ef6000396000f300606060405260043610610099576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063085d48831461009e578063360aa28b146100f357806354a6ff681461012057806375d0c0dc1461014d578063beff90dc1461017e578063ef5fb05b146101ab578063f1c248b114610239578063f5f5ba721461028e578063f9b2b19a146102bf575b600080fd5b34156100a957600080fd5b6100b1610314565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156100fe57600080fd5b610106610339565b604051808215151515815260200191505060405180910390f35b341561012b57600080fd5b610133610432565b604051808215151515815260200191505060405180910390f35b341561015857600080fd5b61016061052b565b60405180826000191660001916815260200191505060405180910390f35b341561018957600080fd5b610191610531565b604051808215151515815260200191505060405180910390f35b34156101b657600080fd5b6101be610723565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101fe5780820151818401526020810190506101e3565b50505050905090810190601f16801561022b5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b341561024457600080fd5b61024c610766565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561029957600080fd5b6102a161078c565b60405180826000191660001916815260200191505060405180910390f35b34156102ca57600080fd5b6102d2610796565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663062af37d336002546000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001826000191660001916815260200192505050602060405180830381600087803b151561041257600080fd5b6102c65a03f1151561042357600080fd5b50505060405180519050905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166320cad613336002546000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001826000191660001916815260200192505050602060405180830381600087803b151561050b57600080fd5b6102c65a03f1151561051c57600080fd5b50505060405180519050905090565b60025481565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663062af37d336002546000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001826000191660001916815260200192505050602060405180830381600087803b151561060a57600080fd5b6102c65a03f1151561061b57600080fd5b505050604051805190508061071e5750600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166320cad613336002546000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001826000191660001916815260200192505050602060405180830381600087803b151561070257600080fd5b6102c65a03f1151561071357600080fd5b505050604051805190505b905090565b61072b6107c0565b6040805190810160405280600a81526020017f48656c6c6f2063616c6c00000000000000000000000000000000000000000000815250905090565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600254905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6020604051908101604052806000815250905600a165627a7a723058204acdb042fe7ec623ebf84946ff6494956224f51379bca3732e941267e5881a100029",
+  "deployedBytecode": "0x606060405260043610610099576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063085d48831461009e578063360aa28b146100f357806354a6ff681461012057806375d0c0dc1461014d578063beff90dc1461017e578063ef5fb05b146101ab578063f1c248b114610239578063f5f5ba721461028e578063f9b2b19a146102bf575b600080fd5b34156100a957600080fd5b6100b1610314565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156100fe57600080fd5b610106610339565b604051808215151515815260200191505060405180910390f35b341561012b57600080fd5b610133610432565b604051808215151515815260200191505060405180910390f35b341561015857600080fd5b61016061052b565b60405180826000191660001916815260200191505060405180910390f35b341561018957600080fd5b610191610531565b604051808215151515815260200191505060405180910390f35b34156101b657600080fd5b6101be610723565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101fe5780820151818401526020810190506101e3565b50505050905090810190601f16801561022b5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b341561024457600080fd5b61024c610766565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561029957600080fd5b6102a161078c565b60405180826000191660001916815260200191505060405180910390f35b34156102ca57600080fd5b6102d2610796565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663062af37d336002546000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001826000191660001916815260200192505050602060405180830381600087803b151561041257600080fd5b6102c65a03f1151561042357600080fd5b50505060405180519050905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166320cad613336002546000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001826000191660001916815260200192505050602060405180830381600087803b151561050b57600080fd5b6102c65a03f1151561051c57600080fd5b50505060405180519050905090565b60025481565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663062af37d336002546000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001826000191660001916815260200192505050602060405180830381600087803b151561060a57600080fd5b6102c65a03f1151561061b57600080fd5b505050604051805190508061071e5750600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166320cad613336002546000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001826000191660001916815260200192505050602060405180830381600087803b151561070257600080fd5b6102c65a03f1151561071357600080fd5b505050604051805190505b905090565b61072b6107c0565b6040805190810160405280600a81526020017f48656c6c6f2063616c6c00000000000000000000000000000000000000000000815250905090565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600254905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6020604051908101604052806000815250905600a165627a7a723058204acdb042fe7ec623ebf84946ff6494956224f51379bca3732e941267e5881a100029",
+  "sourceMap": "76:205:4:-;;;117:10:0;91:36;;;;;;;;;;;;;;;;;;;;117:74:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;174:4;133:111:3;221:4;227:13;686:4:0;680:3;;:10;;;;;;;;;;;;;;;;;;715:13;700:12;:28;;;;;;;598:137;;133:111:3;;117:74:4;76:205;;;;;;",
+  "deployedSourceMap": "76:205:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;91:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;927:124;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1057:118;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;169:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1181:179;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;197:82:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;133:30:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;831:90;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;741:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;91:36;;;;;;;;;;;;;:::o;927:124::-;974:4;997:3;;;;;;;;;;;:21;;;1019:10;1031:12;;997:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;990:54;;927:124;:::o;1057:118::-;1101:4;1124:3;;;;;;;;;;;:18;;;1143:10;1155:12;;1124:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1117:51;;1057:118;:::o;169:27::-;;;;:::o;1181:179::-;1235:4;1258:3;;;;;;;;;;;:21;;;1280:10;1292:12;;1258:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:95;;;;1309:3;;;;;;;;;;;:18;;;1328:10;1340:12;;1309:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1258:95;1251:102;;1181:179;:::o;197:82:4:-;235:6;;:::i;:::-;253:19;;;;;;;;;;;;;;;;;;;;197:82;:::o;133:30:0:-;;;;;;;;;;;;;:::o;831:90::-;876:7;902:12;;895:19;;831:90;:::o;741:84::-;777:19;815:3;;;;;;;;;;;808:10;;741:84;:::o;76:205:4:-;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.2;\n\nimport '../../gmo/contracts/VersionContract.sol';\n\ncontract Hello is VersionContract {\n\n    function Hello(ContractNameService _cns) VersionContract(_cns, \"Hello\") {}\n\n    function sayHello() constant returns (string) {\n        return \"Hello call\";\n    }\n}\n",
+  "sourcePath": "/var/my_folder/miyao_chi/provider/contracts/Hello.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/var/my_folder/miyao_chi/provider/contracts/Hello.sol",
+      "exportedSymbols": {
+        "Hello": [
+          535
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".2"
+          ]
+        },
+        "id": 513,
+        "name": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 512,
+          "absolutePath": "/var/my_folder/miyao_chi/gmo/contracts/VersionContract.sol",
+          "file": "../../gmo/contracts/VersionContract.sol",
+          "scope": 536,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 514,
+        "name": "ImportDirective",
+        "src": "25:49:4"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            126,
+            460,
+            511
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            535,
+            511,
+            460,
+            126
+          ],
+          "name": "Hello",
+          "scope": 536
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "VersionContract",
+                  "referencedDeclaration": 511,
+                  "type": "contract VersionContract"
+                },
+                "id": 515,
+                "name": "UserDefinedTypeName",
+                "src": "94:15:4"
+              }
+            ],
+            "id": 516,
+            "name": "InheritanceSpecifier",
+            "src": "94:15:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "name": "Hello",
+              "payable": false,
+              "scope": 535,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_cns",
+                      "scope": 526,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ContractNameService",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ContractNameService",
+                          "referencedDeclaration": 383,
+                          "type": "contract ContractNameService"
+                        },
+                        "id": 517,
+                        "name": "UserDefinedTypeName",
+                        "src": "132:19:4"
+                      }
+                    ],
+                    "id": 518,
+                    "name": "VariableDeclaration",
+                    "src": "132:24:4"
+                  }
+                ],
+                "id": 519,
+                "name": "ParameterList",
+                "src": "131:26:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 524,
+                "name": "ParameterList",
+                "src": "189:0:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 511,
+                      "type": "type(contract VersionContract)",
+                      "value": "VersionContract"
+                    },
+                    "id": 520,
+                    "name": "Identifier",
+                    "src": "158:15:4"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 518,
+                      "type": "contract ContractNameService",
+                      "value": "_cns"
+                    },
+                    "id": 521,
+                    "name": "Identifier",
+                    "src": "174:4:4"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "48656c6c6f",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"Hello\"",
+                      "value": "Hello"
+                    },
+                    "id": 522,
+                    "name": "Literal",
+                    "src": "180:7:4"
+                  }
+                ],
+                "id": 523,
+                "name": "ModifierInvocation",
+                "src": "158:30:4"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 525,
+                "name": "Block",
+                "src": "189:2:4"
+              }
+            ],
+            "id": 526,
+            "name": "FunctionDefinition",
+            "src": "117:74:4"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "sayHello",
+              "payable": false,
+              "scope": 535,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 527,
+                "name": "ParameterList",
+                "src": "214:2:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 534,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 528,
+                        "name": "ElementaryTypeName",
+                        "src": "235:6:4"
+                      }
+                    ],
+                    "id": 529,
+                    "name": "VariableDeclaration",
+                    "src": "235:6:4"
+                  }
+                ],
+                "id": 530,
+                "name": "ParameterList",
+                "src": "234:8:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 530
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "48656c6c6f2063616c6c",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "string",
+                          "type": "literal_string \"Hello call\"",
+                          "value": "Hello call"
+                        },
+                        "id": 531,
+                        "name": "Literal",
+                        "src": "260:12:4"
+                      }
+                    ],
+                    "id": 532,
+                    "name": "Return",
+                    "src": "253:19:4"
+                  }
+                ],
+                "id": 533,
+                "name": "Block",
+                "src": "243:36:4"
+              }
+            ],
+            "id": 534,
+            "name": "FunctionDefinition",
+            "src": "197:82:4"
+          }
+        ],
+        "id": 535,
+        "name": "ContractDefinition",
+        "src": "76:205:4"
+      }
+    ],
+    "id": 536,
+    "name": "SourceUnit",
+    "src": "0:282:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "12345": {
+      "events": {},
+      "links": {},
+      "address": "0x55c4d2a665c3d9a5e3ccc1254042c3d2374bc635"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2017-12-18T10:25:41.552Z"
+}
