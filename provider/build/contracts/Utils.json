@@ -167,7 +167,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 612,
+                              "referencedDeclaration": 876,
                               "type": "function () pure returns (bytes32)",
                               "value": "sha3"
                             },
@@ -201,7 +201,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 612,
+                                  "referencedDeclaration": 876,
                                   "type": "function () pure returns (bytes32)",
                                   "value": "sha3"
                                 },
@@ -215,7 +215,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 619,
+                                  "referencedDeclaration": 883,
                                   "type": "contract Utils",
                                   "value": "this"
                                 },
@@ -962,7 +962,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 597,
+                              "referencedDeclaration": 861,
                               "type": "function (bytes32,uint8,bytes32,bytes32) pure returns (address)",
                               "value": "ecrecover"
                             },
@@ -1153,5 +1153,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-12-18T09:03:04.031Z"
+  "updatedAt": "2017-12-19T02:43:41.201Z"
 }

@@ -545,7 +545,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 612,
+                              "referencedDeclaration": 876,
                               "type": "function () pure returns (bytes32)",
                               "value": "sha3"
                             },
@@ -634,7 +634,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 612,
+                                  "referencedDeclaration": 876,
                                   "type": "function () pure returns (bytes32)",
                                   "value": "sha3"
                                 },
@@ -742,7 +742,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 612,
+                                  "referencedDeclaration": 876,
                                   "type": "function () pure returns (bytes32)",
                                   "value": "sha3"
                                 },
@@ -843,5 +843,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-12-18T09:03:04.037Z"
+  "updatedAt": "2017-12-19T02:43:41.201Z"
 }

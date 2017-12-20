@@ -1,23 +1,27 @@
 <html>
 
 <body>
-    <script src="../dist/eth-client.min.js"></script>
+    <script src="node_modules/eth-client/dist/eth-client.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript">
-    const cnsAddress = '0xd772b4c34df1c76d245ac3001029709ce5063c3a';
+    const cnsAddress = '0x6c107d669eeb74f823c66d8688dafab91ec9c984';
     const baseUrl = 'http://beta.blockchain.z.com';
-    const abi = [{"constant":true,"inputs":[{"name":"str","type":"string"}],"name":"echo","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"}];
+    const abi = [{"constant":true,"inputs":[],"name":"provider","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"isVersionContract","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"isVersionLogic","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"contractName","outputs":[{"name":"","type":"bytes32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"isVersionContractOrLogic","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"sayHello","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"cns","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getContractName","outputs":[{"name":"","type":"bytes32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getCns","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"_cns","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"}];
     var account;
     var contract;
+	register();
     function register() {
-        ethClient.Account.create(baseUrl, $('#password').val(), function(err, _account) {
+        ethClient.Account.create(baseUrl, '', function(err, _account) {
             if (err) {
                 console.log(err);
             } else {
                 account = _account;
                 contract = new ethClient.AltExecCnsContract(account, cnsAddress);
-                localStorage.setItem('account', account.serialize());
-                $('#address').html(account.getAddress());
+				contract.call('', 'Hello', 'sayHello', [], abi, function(err, res) {
+					if (err) console.error(err);
+					else console.log(res.join(','));
+				});
+                console.log(account.getAddress());
             }
         });
     };
